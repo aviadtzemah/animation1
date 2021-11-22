@@ -8,8 +8,8 @@ project(eigen-download NONE)
 include(ExternalProject)
 ExternalProject_Add(eigen-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/eigenteam/eigen-git-mirror.git;GIT_TAG;3.2.10
-                    SOURCE_DIR          "C:/Dev/EngineForAnimationCourse/cmake/../external/eigen"
-                    BINARY_DIR          "C:/Dev/EngineForAnimationCourse/build/eigen-build"
+                    SOURCE_DIR          "D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/eigen"
+                    BINARY_DIR          "D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/eigen-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

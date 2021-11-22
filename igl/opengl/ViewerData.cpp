@@ -17,6 +17,14 @@
 #include <iostream>
 //#include "external/stb/igl_stb_image.h"
 
+// OUR imports
+#include <igl/edge_flaps.h>
+#include <igl/parallel_for.h>
+#include <igl/shortest_edge_and_midpoint.h>
+#include <igl/collapse_edge.h>
+#include <igl/per_face_normals.h>
+#include <Eigen/Core>
+
 IGL_INLINE igl::opengl::ViewerData::ViewerData()
 : dirty(MeshGL::DIRTY_ALL),
   show_faces(true),
@@ -37,6 +45,112 @@ IGL_INLINE igl::opengl::ViewerData::ViewerData()
 {
   clear();
 };
+
+// OUR functions
+IGL_INLINE void igl::opengl::ViewerData::init_simplify() {    
+    edge_flaps(F, E, EMAP, EF, EI);
+
+    init_quad_costs();
+}
+
+IGL_INLINE void igl::opengl::ViewerData::init_quad_costs() {
+    // ASSUMPTION: the ith F_normals corresponds to the ith F face
+    Eigen::MatrixXd planes = F_normals.normalized();
+    planes.conservativeResize(F.rows(), 4);
+
+    // calculating the d's of each plane
+    for (int i = 0; i < F.rows(); i++) {
+        Eigen::VectorXd vertex = V.row(F(i, 0));
+        planes(i, 3) = -(planes(i, 0) * vertex(0) + planes(i, 1) * vertex(1) + planes(i, 2) * vertex(2));
+    }
+
+    // init the map
+    for (int i = 0; i < V.rows(); i++) {
+        Q_quad[i] = Eigen::MatrixXd::Zero(4, 4);
+    }
+
+    // calculating Q for each vertex
+    for (int i = 0; i < F.rows(); i++) {
+        Eigen::MatrixXd Kp = planes.row(i).transpose() * planes.row(i);
+        Q_quad[F(i, 0)] += Kp;
+        Q_quad[F(i, 1)] += Kp;
+        Q_quad[F(i, 2)] += Kp;
+    }
+
+    for (int i = 0; i < E.rows(); i++) {
+        Eigen::MatrixXd Q_roof = Q_quad[E(i, 0)] + Q_quad[E(i, 1)];
+
+        Eigen::MatrixXd q_op(4, 4);
+
+        /*Eigen::Matrix<double, 4, 4> Q_optimal{
+            {Q_roof(0, 0), Q_roof(0, 1), Q_roof(0, 2), Q_roof(0, 3)},
+            {Q_roof(0, 1), Q_roof(1, 1), Q_roof(1, 2), Q_roof(1, 3)},
+            {Q_roof(0, 2), Q_roof(1, 2), Q_roof(2, 2), Q_roof(2, 3)},
+            {0.0, 0.0, 0.0, 1.0}
+        };*/
+    }
+}
+
+IGL_INLINE void igl::opengl::ViewerData::simplify_mesh(int edges_to_remove) {
+    // setups
+    Eigen::MatrixXd V_proc = V;
+    Eigen::MatrixXi F_proc = F;
+
+   
+    if (!init_costs_flag) {
+        C.resize(E.rows(), V_proc.cols());
+        
+        Eigen::VectorXd costs(E.rows());
+        igl::parallel_for(E.rows(), [&](const int e)
+            {
+
+                double cost = e;
+                Eigen::RowVectorXd p(1, 3);
+                shortest_edge_and_midpoint(e, V_proc, F_proc, E, EMAP, EF, EI, cost, p);
+                C.row(e) = p;
+                costs(e) = cost;
+
+            }, 10000);
+
+        for (int e = 0;e < E.rows();e++)
+        {
+            std::set<std::pair<double, int> >::iterator ret = Q.insert(std::pair<double, int>(costs(e), e)).first;
+            Qit.push_back(ret);
+        }
+
+        init_costs_flag = true;
+    }
+   
+
+    if (!Q.empty())
+    {
+        bool something_collapsed = false;
+        // collapse edge
+        for (int j = 0;j < edges_to_remove; j++)
+        {
+            if (!collapse_edge(shortest_edge_and_midpoint, V_proc, F_proc, E, EMAP, EF, EI, Q, Qit, C))
+            {
+                break;
+            }
+            something_collapsed = true;
+        }
+
+        if (something_collapsed)
+        {
+            clear();
+            set_mesh(V_proc, F_proc);
+            set_face_based(true);
+            dirty = 157;
+        }
+    }
+}
+
+
+IGL_INLINE void igl::opengl::ViewerData::simplify_mesh_quad_err(int edges_to_remove) {
+
+    compute_normals();
+    std::cout << V_normals << std::endl;
+}
 
 IGL_INLINE void igl::opengl::ViewerData::set_face_based(bool newvalue)
 {
@@ -74,7 +188,7 @@ IGL_INLINE void igl::opengl::ViewerData::set_mesh(
       Eigen::Vector3d(GOLD_AMBIENT[0], GOLD_AMBIENT[1], GOLD_AMBIENT[2]),
       Eigen::Vector3d(GOLD_DIFFUSE[0], GOLD_DIFFUSE[1], GOLD_DIFFUSE[2]),
       Eigen::Vector3d(GOLD_SPECULAR[0], GOLD_SPECULAR[1], GOLD_SPECULAR[2]));
-	image_texture("C:/Dev/EngineForAnimationCourse/tutorial/textures/snake1.png");
+	image_texture("D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/tutorial/textures/snake1.png");
 //    grid_texture();
   }
   else
@@ -88,6 +202,12 @@ IGL_INLINE void igl::opengl::ViewerData::set_mesh(
       cerr << "ERROR (set_mesh): The new mesh has a different number of vertices/faces. Please clear the mesh before plotting."<<endl;
   }
   dirty |= MeshGL::DIRTY_FACE | MeshGL::DIRTY_POSITION;
+
+  // our addition to the function
+  if (!init_ds_flag) {
+      init_simplify(); 
+      init_ds_flag = true;
+  }
 }
 
 IGL_INLINE void igl::opengl::ViewerData::set_vertices(const Eigen::MatrixXd& _V)

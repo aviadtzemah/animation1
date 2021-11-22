@@ -1,14 +1,14 @@
 # Target labels
  stb-download
 # Source files and their labels
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/stb-download
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/aba08456388b92e938542ae9570660b8/stb-download.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/e0199abd4f5142946dc0db8ddab10b26/stb-download-complete.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-install.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-mkdir.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-download.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-update.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-patch.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-configure.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-build.rule
-C:/Dev/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/50d1f4993b968176e85c8bee94448529/stb-download-test.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/stb-download
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/2fb4db9054a2b253abc11e161de2b5f2/stb-download.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/78cef41c996a707f76a3c4b59ba7a5f4/stb-download-complete.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-build.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-configure.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-download.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-install.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-mkdir.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-patch.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-test.rule
+D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/05ea1eb54d171b6a1e5f75be836c5ac6/stb-download-update.rule

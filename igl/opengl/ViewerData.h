@@ -17,6 +17,10 @@
 #include <memory>
 #include <vector>
 
+// OUR imports
+#include <set>
+#include <map>
+
 
 // Alec: This is a mesh class containing a variety of data types (normals,
 // overlays, material colors, etc.)
@@ -151,6 +155,25 @@ public:
 
   Eigen::MatrixXd V; // Vertices of the current mesh (#V x 3)
   Eigen::MatrixXi F; // Faces of the mesh (#F x 3)
+
+
+  // OUR definitions
+  Eigen::VectorXi EMAP;
+  Eigen::MatrixXi E, EF, EI;
+  Eigen::MatrixXd C;
+  std::set<std::pair<double, int> > Q;
+  std::vector<std::set<std::pair<double, int> >::iterator > Qit;
+  bool init_ds_flag = false;
+  bool init_costs_flag = false;
+
+  std::map<int, Eigen::MatrixXd> Q_quad; // vertex to its Q
+  std::map<int, double> E_cost; // cost of an edge
+  std::map<int, Eigen::VectorXd> contractions; // edge index to its contraction vertex
+ 
+  IGL_INLINE void init_simplify();
+  IGL_INLINE void simplify_mesh(int edges_to_remove);
+  IGL_INLINE void simplify_mesh_quad_err(int edges_to_remove);
+  IGL_INLINE void init_quad_costs();
 
   // Per face attributes
   Eigen::MatrixXd F_normals; // One normal per face

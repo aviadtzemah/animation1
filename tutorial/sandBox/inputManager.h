@@ -178,7 +178,8 @@ static void glfw_key_callback(GLFWwindow* window, int key, int scancode, int act
 			rndr->TranslateCamera(Eigen::Vector3f(0.01f, 0, 0));
 			break;
 		case ' ':
-
+			// taking off 5 percent of the edges
+			scn->data().simplify_mesh_quad_err(scn->data().E.size() * 0.05);
 			break;
 		
 		default: 

@@ -8,8 +8,8 @@ project(stb-download NONE)
 include(ExternalProject)
 ExternalProject_Add(stb-download
                     TLS_VERIFY;OFF;GIT_CONFIG;advice.detachedHead=false;GIT_REPOSITORY;https://github.com/libigl/libigl-stb.git;GIT_TAG;cd0fa3fcd90325c83be4d697b00214e029f94ca3
-                    SOURCE_DIR          "C:/Dev/EngineForAnimationCourse/cmake/../external/stb"
-                    BINARY_DIR          "C:/Dev/EngineForAnimationCourse/build/stb-build"
+                    SOURCE_DIR          "D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/stb"
+                    BINARY_DIR          "D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/stb-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
