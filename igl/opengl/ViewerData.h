@@ -20,6 +20,7 @@
 // OUR imports
 #include <set>
 #include <map>
+#include <queue>
 
 
 // Alec: This is a mesh class containing a variety of data types (normals,
@@ -167,7 +168,8 @@ public:
   bool init_costs_flag = false;
 
   std::map<int, Eigen::MatrixXd> Q_quad; // vertex to its Q
-  std::map<int, double> E_cost; // cost of an edge
+  std::priority_queue<std::pair<double, int>, std::vector<std::pair<double, int>>, std::greater<std::pair<double, int>> > E_cost; // some kind of a min heap
+  //std::map<int, double> E_cost; // cost of an edge
   std::map<int, Eigen::VectorXd> contractions; // edge index to its contraction vertex
  
   IGL_INLINE void init_simplify();

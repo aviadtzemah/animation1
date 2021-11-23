@@ -179,7 +179,12 @@ static void glfw_key_callback(GLFWwindow* window, int key, int scancode, int act
 			break;
 		case ' ':
 			// taking off 5 percent of the edges
-			scn->data().simplify_mesh_quad_err(scn->data().E.size() * 0.05);
+			//scn->data().E.size() * 0.05
+			scn->data().simplify_mesh(1);
+			break;
+		case 'b':
+		case 'B':
+			scn->data().simplify_mesh_quad_err(1);
 			break;
 		
 		default: 

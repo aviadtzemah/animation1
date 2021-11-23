@@ -24,6 +24,7 @@
 #include <igl/collapse_edge.h>
 #include <igl/per_face_normals.h>
 #include <Eigen/Core>
+#include <limits>
 
 IGL_INLINE igl::opengl::ViewerData::ViewerData()
 : dirty(MeshGL::DIRTY_ALL),
@@ -76,19 +77,76 @@ IGL_INLINE void igl::opengl::ViewerData::init_quad_costs() {
         Q_quad[F(i, 1)] += Kp;
         Q_quad[F(i, 2)] += Kp;
     }
-
+  
+    // calculating the contractions and their costs
+    Eigen::Vector4d last_row { 0.0, 0.0, 0.0, 1.0 };
+    Eigen::VectorXd optimal_vertex;
+    double optimal_cost;
     for (int i = 0; i < E.rows(); i++) {
         Eigen::MatrixXd Q_roof = Q_quad[E(i, 0)] + Q_quad[E(i, 1)];
 
-        Eigen::MatrixXd q_op(4, 4);
+        Eigen::MatrixXd Q_roof_prime = Q_roof;
+        Q_roof_prime.row(3) = last_row;
+        Q_roof_prime = Q_roof_prime.inverse(); // inverting
+        if (Q_roof_prime(0, 0) != std::numeric_limits<float>::infinity()) { // if there's inf then the matrix is not invertible
+            optimal_vertex = Q_roof_prime * last_row; // 4 x 1
+            optimal_cost = optimal_vertex.transpose() * Q_roof * optimal_vertex;
+            E_cost.push(std::pair<double, int>(optimal_cost, i));
+            optimal_vertex.conservativeResize(3, 1);
+            contractions[i] = optimal_vertex;
+        }
+        else { // the matrix is not invertible and we have to choose one of 3 options
+            // choosing optimal???
 
-        /*Eigen::Matrix<double, 4, 4> Q_optimal{
-            {Q_roof(0, 0), Q_roof(0, 1), Q_roof(0, 2), Q_roof(0, 3)},
-            {Q_roof(0, 1), Q_roof(1, 1), Q_roof(1, 2), Q_roof(1, 3)},
-            {Q_roof(0, 2), Q_roof(1, 2), Q_roof(2, 2), Q_roof(2, 3)},
-            {0.0, 0.0, 0.0, 1.0}
-        };*/
+            Eigen::VectorXd vertex1 = V.row(E(i, 0)); // v1
+            double v1_cost = vertex1.transpose() * Q_roof * vertex1; // v1 cost
+
+            Eigen::VectorXd vertex2 = V.row(E(i, 1)); // v2
+            double v2_cost = vertex2.transpose() * Q_roof * vertex1; // v2 cost
+
+            Eigen::VectorXd vertex12 = (V.row(E(i, 0)) + V.row(E(i, 1)))/2; //]the middle of v1 and v2
+            double v12_cost = vertex12.transpose() * Q_roof * vertex12; // v2 cost
+
+            if (v1_cost < v2_cost) {
+                if (v1_cost < v12_cost) {
+                    E_cost.push(std::pair<double, int>(v1_cost, i));
+                    contractions[i] = vertex1;
+                }
+                else {
+                    E_cost.push(std::pair<double, int>(v12_cost, i));
+                    contractions[i] = vertex12;
+                }
+            }
+            else {
+                if (v2_cost < v12_cost) {
+                    E_cost.push(std::pair<double, int>(v2_cost, i));
+                    contractions[i] = vertex2;
+                }
+                else {
+                    E_cost.push(std::pair<double, int>(v12_cost, i));
+                    contractions[i] = vertex12;
+                }
+            }
+        }
     }
+
+    /*  Eigen::Matrix2f A;
+    A << 9, 6,
+        12, 8;
+
+    std::cout << A.inverse() << std::endl;*/
+
+    /* E_cost.push(std::pair<double, int>(200, 1));
+     E_cost.push(std::pair<double, int>(0.1, 2));
+     E_cost.push(std::pair<double, int>(150, 2));
+     std::pair<double, int> top = E_cost.top();
+     std::cout << top.first << " " << top.second << std::endl;
+     E_cost.pop();
+     top = E_cost.top();
+     std::cout << top.first << " " << top.second << std::endl;
+     E_cost.pop();
+     top = E_cost.top();
+     std::cout << top.first << " " << top.second << std::endl;*/
 }
 
 IGL_INLINE void igl::opengl::ViewerData::simplify_mesh(int edges_to_remove) {
@@ -145,11 +203,103 @@ IGL_INLINE void igl::opengl::ViewerData::simplify_mesh(int edges_to_remove) {
     }
 }
 
+// function taken form https://stackoverflow.com/questions/13290395/how-to-remove-a-certain-row-or-column-while-using-eigen-library-c
+void removeRow(Eigen::MatrixXd& matrix, unsigned int rowToRemove)
+{
+    unsigned int numRows = matrix.rows() - 1;
+    unsigned int numCols = matrix.cols();
+
+    if (rowToRemove < numRows)
+        matrix.block(rowToRemove, 0, numRows - rowToRemove, numCols) = matrix.block(rowToRemove + 1, 0, numRows - rowToRemove, numCols);
+
+    matrix.conservativeResize(numRows, numCols);
+}
 
 IGL_INLINE void igl::opengl::ViewerData::simplify_mesh_quad_err(int edges_to_remove) {
+    for (int i = 0; i < edges_to_remove; i++) {
+        std::pair<double, int> lowest_cost = E_cost.top(); // getting the lowest cost (cost, edge)
+        int edge_to_collapse = lowest_cost.second;
+        Eigen::VectorXd new_vetrex = contractions[edge_to_collapse];
+        int v1 = E(edge_to_collapse, 0);
+        int v2 = E(edge_to_collapse, 0);
+        int f1_to_collapse = EF(edge_to_collapse, 0);
+        int f2_to_collapse = EF(edge_to_collapse, 1);
 
-    compute_normals();
-    std::cout << V_normals << std::endl;
+        // collapsing edge
+        E(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+        E(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+
+        // collapsing faces
+        // first face 
+        F(f1_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+        F(f1_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+        F(f1_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
+        //second face
+        F(f2_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+        F(f2_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+        F(f2_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
+
+        // contraction
+        // setting both of v1 to v2 to the new contraption
+        /*new_vetrex = new_vetrex.transpose();
+        new_vetrex.conservativeResize(1, 3);*/
+        V.row(v1) = new_vetrex;
+        V.row(v2) = new_vetrex;
+
+        //connecting all of v2 edges to v1
+        for (int j = 0; j < E.rows(); j++) {
+            if (E(j, 0) == v2) {
+                E(j, 0) = v1;
+            }
+
+            if (E(j, 1) == v2) {
+                E(j, 1) = v1;
+            }
+        }
+
+        for (int j = 0; j < F.rows(); j++) {
+            if (F(j, 0) == v2) {
+                F(j, 0) = v1;
+            }
+
+            if (F(j, 1) == v2) {
+                F(j, 1) = v1;
+            }
+
+            if (F(j, 2) == v2) {
+                F(j, 2) = v1;
+            }
+        }
+
+        // removing v2
+        // ASSUMPTION: not sure about this
+        V(v2, 0) = 0;
+        V(v2, 1) = 0;
+        V(v2, 2) = 0;
+        
+        // ASSUMPTION: NOT SURE ABOUT THIS
+        // every 10 iterations recalculated costs 
+        if (i % 10 == 0) {
+            init_quad_costs();
+        }
+
+        Eigen::MatrixXd V_temp = V;
+        Eigen::MatrixXi F_temp = F;
+
+        
+
+        clear();
+        set_mesh(V_temp, F_temp);
+        set_face_based(true);
+        dirty = 157;
+        
+
+        std::cout << "edge " << edge_to_collapse << ", cost = " << lowest_cost.first << ", new v position (" << new_vetrex << ")" << std::endl;
+    }
+
+    edge_flaps(F, E, EMAP, EF, EI);
+
+    init_quad_costs();
 }
 
 IGL_INLINE void igl::opengl::ViewerData::set_face_based(bool newvalue)
