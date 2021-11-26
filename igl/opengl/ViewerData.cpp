@@ -291,6 +291,7 @@ IGL_INLINE void igl::opengl::ViewerData::simplify_mesh_quad_err(int edges_to_rem
         // The following implementation strongly relies on s<d
         assert(s < d && "s should be less than d");
         // move source and destination to midpoint
+        Q_quad[s] = Q_quad[s] + Q_quad[d];
         V.row(s) = new_vetrex;
         V.row(d) = new_vetrex;
 
