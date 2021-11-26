@@ -176,6 +176,7 @@ public:
   IGL_INLINE void simplify_mesh(int edges_to_remove);
   IGL_INLINE void simplify_mesh_quad_err(int edges_to_remove);
   IGL_INLINE void init_quad_costs();
+  IGL_INLINE void igl::opengl::ViewerData::update_costs();
 
   // Per face attributes
   Eigen::MatrixXd F_normals; // One normal per face

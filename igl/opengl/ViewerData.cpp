@@ -25,6 +25,8 @@
 #include <igl/per_face_normals.h>
 #include <Eigen/Core>
 #include <limits>
+#include <igl/edge_collapse_is_valid.h>
+#include <igl/circulation.h>
 
 IGL_INLINE igl::opengl::ViewerData::ViewerData()
 : dirty(MeshGL::DIRTY_ALL),
@@ -56,6 +58,7 @@ IGL_INLINE void igl::opengl::ViewerData::init_simplify() {
 
 IGL_INLINE void igl::opengl::ViewerData::init_quad_costs() {
     // ASSUMPTION: the ith F_normals corresponds to the ith F face
+    compute_normals();
     Eigen::MatrixXd planes = F_normals.normalized();
     planes.conservativeResize(F.rows(), 4);
 
@@ -104,7 +107,7 @@ IGL_INLINE void igl::opengl::ViewerData::init_quad_costs() {
             Eigen::VectorXd vertex2 = V.row(E(i, 1)); // v2
             double v2_cost = vertex2.transpose() * Q_roof * vertex1; // v2 cost
 
-            Eigen::VectorXd vertex12 = (V.row(E(i, 0)) + V.row(E(i, 1)))/2; //]the middle of v1 and v2
+            Eigen::VectorXd vertex12 = (V.row(E(i, 0)) + V.row(E(i, 1))) / 2; //]the middle of v1 and v2
             double v12_cost = vertex12.transpose() * Q_roof * vertex12; // v2 cost
 
             if (v1_cost < v2_cost) {
@@ -203,103 +206,482 @@ IGL_INLINE void igl::opengl::ViewerData::simplify_mesh(int edges_to_remove) {
     }
 }
 
-// function taken form https://stackoverflow.com/questions/13290395/how-to-remove-a-certain-row-or-column-while-using-eigen-library-c
-void removeRow(Eigen::MatrixXd& matrix, unsigned int rowToRemove)
-{
-    unsigned int numRows = matrix.rows() - 1;
-    unsigned int numCols = matrix.cols();
+IGL_INLINE void igl::opengl::ViewerData::update_costs() {
 
-    if (rowToRemove < numRows)
-        matrix.block(rowToRemove, 0, numRows - rowToRemove, numCols) = matrix.block(rowToRemove + 1, 0, numRows - rowToRemove, numCols);
+    // calculating the contractions and their costs
+    Eigen::Vector4d last_row{ 0.0, 0.0, 0.0, 1.0 };
+    Eigen::VectorXd optimal_vertex;
+    double optimal_cost;
+    E_cost = std::priority_queue<std::pair<double, int>, std::vector<std::pair<double, int>>, std::greater<std::pair<double, int>> >();
+    for (int i = 0; i < E.rows(); i++) {
+        Eigen::MatrixXd Q_roof = Q_quad[E(i, 0)] + Q_quad[E(i, 1)];
 
-    matrix.conservativeResize(numRows, numCols);
+        Eigen::MatrixXd Q_roof_prime = Q_roof;
+        Q_roof_prime.row(3) = last_row;
+        Q_roof_prime = Q_roof_prime.inverse(); // inverting
+        if (Q_roof_prime(0, 0) != std::numeric_limits<float>::infinity()) { // if there's inf then the matrix is not invertible
+            optimal_vertex = Q_roof_prime * last_row; // 4 x 1
+            optimal_cost = optimal_vertex.transpose() * Q_roof * optimal_vertex;
+            E_cost.push(std::pair<double, int>(optimal_cost, i));
+            optimal_vertex.conservativeResize(3, 1);
+            contractions[i] = optimal_vertex;
+        }
+        else { // the matrix is not invertible and we have to choose one of 3 options
+            // choosing optimal???
+
+            Eigen::VectorXd vertex1 = V.row(E(i, 0)); // v1
+            double v1_cost = vertex1.transpose() * Q_roof * vertex1; // v1 cost
+
+            Eigen::VectorXd vertex2 = V.row(E(i, 1)); // v2
+            double v2_cost = vertex2.transpose() * Q_roof * vertex1; // v2 cost
+
+            Eigen::VectorXd vertex12 = (V.row(E(i, 0)) + V.row(E(i, 1))) / 2; //]the middle of v1 and v2
+            double v12_cost = vertex12.transpose() * Q_roof * vertex12; // v2 cost
+
+            if (v1_cost < v2_cost) {
+                if (v1_cost < v12_cost) {
+                    E_cost.push(std::pair<double, int>(v1_cost, i));
+                    contractions[i] = vertex1;
+                }
+                else {
+                    E_cost.push(std::pair<double, int>(v12_cost, i));
+                    contractions[i] = vertex12;
+                }
+            }
+            else {
+                if (v2_cost < v12_cost) {
+                    E_cost.push(std::pair<double, int>(v2_cost, i));
+                    contractions[i] = vertex2;
+                }
+                else {
+                    E_cost.push(std::pair<double, int>(v12_cost, i));
+                    contractions[i] = vertex12;
+                }
+            }
+        }
+    }
 }
 
 IGL_INLINE void igl::opengl::ViewerData::simplify_mesh_quad_err(int edges_to_remove) {
+
     for (int i = 0; i < edges_to_remove; i++) {
+        if (E_cost.empty()) {
+            break;
+        }
         std::pair<double, int> lowest_cost = E_cost.top(); // getting the lowest cost (cost, edge)
+        E_cost.pop();
         int edge_to_collapse = lowest_cost.second;
-        Eigen::VectorXd new_vetrex = contractions[edge_to_collapse];
-        int v1 = E(edge_to_collapse, 0);
-        int v2 = E(edge_to_collapse, 0);
-        int f1_to_collapse = EF(edge_to_collapse, 0);
-        int f2_to_collapse = EF(edge_to_collapse, 1);
+       Eigen::VectorXd new_vetrex = contractions[edge_to_collapse];
 
-        // collapsing edge
-        E(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
-        E(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
 
-        // collapsing faces
-        // first face 
-        F(f1_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
-        F(f1_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
-        F(f1_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
-        //second face
-        F(f2_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
-        F(f2_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
-        F(f2_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
+        const int eflip = E(edge_to_collapse, 0) > E(edge_to_collapse, 1);
+        // source and destination
+        const int s = eflip ? E(edge_to_collapse, 1) : E(edge_to_collapse, 0);
+        const int d = eflip ? E(edge_to_collapse, 0) : E(edge_to_collapse, 1);
 
-        // contraction
-        // setting both of v1 to v2 to the new contraption
-        /*new_vetrex = new_vetrex.transpose();
-        new_vetrex.conservativeResize(1, 3);*/
-        V.row(v1) = new_vetrex;
-        V.row(v2) = new_vetrex;
-
-        //connecting all of v2 edges to v1
-        for (int j = 0; j < E.rows(); j++) {
-            if (E(j, 0) == v2) {
-                E(j, 0) = v1;
-            }
-
-            if (E(j, 1) == v2) {
-                E(j, 1) = v1;
-            }
+        if (!edge_collapse_is_valid(edge_to_collapse, F, E, EMAP, EF, EI))
+        {
+            i--; // we still want to collapse the correct number of edges
+            continue;
         }
 
-        for (int j = 0; j < F.rows(); j++) {
-            if (F(j, 0) == v2) {
-                F(j, 0) = v1;
-            }
+        // Important to grab neighbors of d before monkeying with edges
+        const std::vector<int> nV2Fd = circulation(edge_to_collapse, !eflip, EMAP, EF, EI);
 
-            if (F(j, 1) == v2) {
-                F(j, 1) = v1;
-            }
+        // The following implementation strongly relies on s<d
+        assert(s < d && "s should be less than d");
+        // move source and destination to midpoint
+        V.row(s) = new_vetrex;
+        V.row(d) = new_vetrex;
 
-            if (F(j, 2) == v2) {
-                F(j, 2) = v1;
-            }
+        // update edge info
+        // for each flap
+        const int m = F.rows();
+        for (int side = 0;side < 2;side++)
+        {
+            const int f = EF(edge_to_collapse, side);
+            const int v = EI(edge_to_collapse, side);
+            const int sign = (eflip == 0 ? 1 : -1) * (1 - 2 * side);
+            // next edge emanating from d
+            const int e1 = EMAP(f + m * ((v + sign * 1 + 3) % 3));
+            // prev edge pointing to s
+            const int e2 = EMAP(f + m * ((v + sign * 2 + 3) % 3));
+            assert(E(e1, 0) == d || E(e1, 1) == d);
+            assert(E(e2, 0) == s || E(e2, 1) == s);
+            // face adjacent to f on e1, also incident on d
+            const bool flip1 = EF(e1, 1) == f;
+            const int f1 = flip1 ? EF(e1, 0) : EF(e1, 1);
+            assert(f1 != f);
+            assert(F(f1, 0) == d || F(f1, 1) == d || F(f1, 2) == d);
+            // across from which vertex of f1 does e1 appear?
+            const int v1 = flip1 ? EI(e1, 0) : EI(e1, 1);
+            // Kill e1
+            E(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+            E(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+            EF(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+            EF(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+            EI(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+            EI(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+            // Kill f
+            F(f, 0) = IGL_COLLAPSE_EDGE_NULL;
+            F(f, 1) = IGL_COLLAPSE_EDGE_NULL;
+            F(f, 2) = IGL_COLLAPSE_EDGE_NULL;
+            // map f1's edge on e1 to e2
+            assert(EMAP(f1 + m * v1) == e1);
+            EMAP(f1 + m * v1) = e2;
+            // side opposite f2, the face adjacent to f on e2, also incident on s
+            const int opp2 = (EF(e2, 0) == f ? 0 : 1);
+            assert(EF(e2, opp2) == f);
+            EF(e2, opp2) = f1;
+            EI(e2, opp2) = v1;
+            // remap e2 from d to s
+            E(e2, 0) = E(e2, 0) == d ? s : E(e2, 0);
+            E(e2, 1) = E(e2, 1) == d ? s : E(e2, 1);
         }
 
-        // removing v2
-        // ASSUMPTION: not sure about this
-        V(v2, 0) = 0;
-        V(v2, 1) = 0;
-        V(v2, 2) = 0;
+        // finally, reindex faces and edges incident on d. Do this last so asserts
+        // make sense.
+        //
+        // Could actually skip first and last, since those are always the two
+        // collpased faces.
+        for (auto f : nV2Fd)
+        {
+            for (int v = 0;v < 3;v++)
+            {
+                if (F(f, v) == d)
+                {
+                    const int flip1 = (EF(EMAP(f + m * ((v + 1) % 3)), 0) == f) ? 1 : 0;
+                    const int flip2 = (EF(EMAP(f + m * ((v + 2) % 3)), 0) == f) ? 0 : 1;
+                    assert(
+                        E(EMAP(f + m * ((v + 1) % 3)), flip1) == d ||
+                        E(EMAP(f + m * ((v + 1) % 3)), flip1) == s);
+                    E(EMAP(f + m * ((v + 1) % 3)), flip1) = s;
+                    assert(
+                        E(EMAP(f + m * ((v + 2) % 3)), flip2) == d ||
+                        E(EMAP(f + m * ((v + 2) % 3)), flip2) == s);
+                    E(EMAP(f + m * ((v + 2) % 3)), flip2) = s;
+                    F(f, v) = s;
+                    break;
+                }
+            }
+        }
+        // Finally, "remove" this edge and its information
+           E(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+           E(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+           EF(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+           EF(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+           EI(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+           EI(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-        // ASSUMPTION: NOT SURE ABOUT THIS
-        // every 10 iterations recalculated costs 
-        if (i % 10 == 0) {
-            init_quad_costs();
-        }
 
+  //      if (!edge_collapse_is_valid(edge_to_collapse, F, E, EMAP, EF, EI)) { // if can't collapse the current edge then move to the next one
+  //          i--; // we still want to collapse the correct number of edges
+  //          continue;
+  //      }
+  //      
+  //      const int eflip = E(edge_to_collapse, 0) > E(edge_to_collapse, 1);
+  //      // source and destination
+  //      const int v1 = eflip ? E(edge_to_collapse, 1) : E(edge_to_collapse, 0);
+  //      const int v2 = eflip ? E(edge_to_collapse, 0) : E(edge_to_collapse, 1);
+  //      int f1_to_collapse = EF(edge_to_collapse, 0);
+  //      int f2_to_collapse = EF(edge_to_collapse, 1);
+  //      Eigen::RowVectorXd new_vetrex = contractions[edge_to_collapse].transpose();
+
+  //      // setting up the new vertex
+  //      Q_quad[v1] = Q_quad[v1] + Q_quad[v2];
+  //      V.row(v1) = new_vetrex;
+  //      V.row(v2) = new_vetrex;
+
+
+  //      // update edge info
+  //// for each flap
+  //      const int m = F.rows();
+  //      for (int side = 0;side < 2;side++)
+  //      {
+  //          const int f = EF(edge_to_collapse, side);
+  //          const int v = EI(edge_to_collapse, side);
+  //          const int sign = (eflip == 0 ? 1 : -1) * (1 - 2 * side);
+  //          // next edge emanating from d
+  //          const int e1 = EMAP(f + m * ((v + sign * 1 + 3) % 3));
+  //          // prev edge pointing to s
+  //          const int e2 = EMAP(f + m * ((v + sign * 2 + 3) % 3));
+  //          assert(E(e1, 0) == v2 || E(e1, 1) == v2);
+  //          assert(E(e2, 0) == v1 || E(e2, 1) == v1);
+  //          // face adjacent to f on e1, also incident on d
+  //          const bool flip1 = EF(e1, 1) == f;
+  //          const int f1 = flip1 ? EF(e1, 0) : EF(e1, 1);
+  //          assert(f1 != f);
+  //          assert(F(f1, 0) == v2 || F(f1, 1) == v2 || F(f1, 2) == v2);
+  //          // across from which vertex of f1 does e1 appear?
+  //          const int v1 = flip1 ? EI(e1, 0) : EI(e1, 1);
+  //          // Kill e1
+  //          E(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+  //          E(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+  //          EF(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+  //          EF(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+  //          EI(e1, 0) = IGL_COLLAPSE_EDGE_NULL;
+  //          EI(e1, 1) = IGL_COLLAPSE_EDGE_NULL;
+  //          // Kill f
+  //          F(f, 0) = IGL_COLLAPSE_EDGE_NULL;
+  //          F(f, 1) = IGL_COLLAPSE_EDGE_NULL;
+  //          F(f, 2) = IGL_COLLAPSE_EDGE_NULL;
+  //          // map f1's edge on e1 to e2
+  //          assert(EMAP(f1 + m * v1) == e1);
+  //          EMAP(f1 + m * v1) = e2;
+  //          // side opposite f2, the face adjacent to f on e2, also incident on s
+  //          const int opp2 = (EF(e2, 0) == f ? 0 : 1);
+  //          assert(EF(e2, opp2) == f);
+  //          EF(e2, opp2) = f1;
+  //          EI(e2, opp2) = v1;
+  //          // remap e2 from d to s
+  //          E(e2, 0) = E(e2, 0) == v2 ? v1 : E(e2, 0);
+  //          E(e2, 1) = E(e2, 1) == v2 ? v1 : E(e2, 1);
+  //      }
+
+
+  //      // connecting the faces from v2 to v1
+  //      for (int j = 0; j < F.rows(); j++) {
+  //          if (F(j, 0) == v2) {
+  //              F(j, 0) = v1;
+  //          }
+
+  //          if (F(j, 1) == v2) {
+  //              F(j, 1) = v1;
+  //          }
+
+  //          if (F(j, 2) == v2) {
+  //              F(j, 2) = v1;
+  //          }
+  //      }
+
+
+
+
+        // setting up the mesh again after the changes
         Eigen::MatrixXd V_temp = V;
         Eigen::MatrixXi F_temp = F;
-
-        
 
         clear();
         set_mesh(V_temp, F_temp);
         set_face_based(true);
         dirty = 157;
-        
+
+        if (i % 10 == 0) {
+            update_costs();
+        }
 
         std::cout << "edge " << edge_to_collapse << ", cost = " << lowest_cost.first << ", new v position (" << new_vetrex << ")" << std::endl;
+
+
+
+
+
+
+
+       // // collapsing faces
+       //// first face
+       // F(f1_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+       // F(f1_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+       // F(f1_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
+       // //second face
+       // F(f2_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+       // F(f2_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+       // F(f2_to_collapse, 2) = IGL_COLLAPSE_EDGE_NULL;
+
+       // // collapsing the edge
+       // E(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+       // E(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+       // EF(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+       // EF(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+       // EI(edge_to_collapse, 0) = IGL_COLLAPSE_EDGE_NULL;
+       // EI(edge_to_collapse, 1) = IGL_COLLAPSE_EDGE_NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //std::cout << "EDGE to COLLAPSE " << edge_to_collapse << std::endl;
+        //std::cout << "E ROWS: " << E.rows() << std::endl;
+        //std::cout << "F rows: " << F.rows() << std::endl;
+        //std::cout << "EF  RoWS  " << EF.rows() << std::endl;
+        //std::cout << "edge 0 faces: " << EF.row(0) << std::endl;
+        //std::cout << "f1 to COLLAPSE " << f1_to_collapse << std::endl;
+        //std::cout << "f2 to COLLAPSE " << f2_to_collapse << std::endl;
+        //std::cout << "vertex of the edge: " << E.row(edge_to_collapse) << std::endl;
+        //std::cout << "face1 to collapse " << F.row(f1_to_collapse) << std::endl;
+        //std::cout << "face2 to collapse " << F.row(f2_to_collapse) << std::endl;
+        // 
+        //// contraction
+        //// setting both of v1 to v2 to the new contraption
+        ////Q_quad[v1] = Q_quad[v1] + Q_quad[v2];
+        
+
+
+        //// getting the neibors of v1
+        //std::set<int> v1_neighbors;
+        //for (int j = 0; j < E.rows(); j++) {
+        //    if (E(j, 0) == v1) {
+        //        v1_neighbors.insert(E(j, 1));
+        //    }
+
+        //    if (E(j, 1) == v1) {
+        //        v1_neighbors.insert(E(j, 0));
+        //    }
+        //}
+
+        ////connecting all of v2 edges to v1
+        //for (int j = 0; j < E.rows(); j++) {
+        //    if (E(j, 0) == v2) {
+        //        
+        //        if (v1_neighbors.find(E(j, 1)) == v1_neighbors.end()) { // if the other vertex is not already a neighbor of v1 then change to v1
+        //            E(j, 0) = v1;
+        //        }
+        //        else { // collapsing the edge if it's already part of v1
+        //            E(j, 0) = IGL_COLLAPSE_EDGE_NULL;
+        //            E(j, 1) = IGL_COLLAPSE_EDGE_NULL;
+        //        }
+        //    }
+
+        //    if (E(j, 1) == v2) {
+        //        if (v1_neighbors.find(E(j, 0)) == v1_neighbors.end()) { // if the other vertex is not already a neighbor of v1 then change to v1
+        //            E(j, 1) = v1;
+        //        }
+        //        else { // collapsing the edge if it's already part of v1
+        //            E(j, 0) = IGL_COLLAPSE_EDGE_NULL;
+        //            E(j, 1) = IGL_COLLAPSE_EDGE_NULL;
+        //        }
+        //    }
+        //}
+
+        //for (int j = 0; j < F.rows(); j++) {
+        //    if (F(j, 0) == v2) {
+        //        F(j, 0) = v1;
+        //    }
+
+        //    if (F(j, 1) == v2) {
+        //        F(j, 1) = v1;
+        //    }
+
+        //    if (F(j, 2) == v2) {
+        //        F(j, 2) = v1;
+        //    }
+        //}
+        //
+        //// removing v2
+        //// ASSUMPTION: not sure about this
+        ///*V(v2, 0) = 0;
+        //V(v2, 1) = 0;
+        //V(v2, 2) = 0;*/
+        //
+        //// ASSUMPTION: NOT SURE ABOUT THIS
+        //// every 10 iterations recalculated costs 
+        ///*if (i % 10 == 0) {
+        //    init_quad_costs();
+        //}*/
+
+        //Eigen::MatrixXd V_temp = V;
+        //Eigen::MatrixXi F_temp = F;
+
+        //clear();
+        //set_mesh(V_temp, F_temp);
+        //set_face_based(true);
+        //dirty = 157;
+        //
+
+        //std::cout << "edge " << edge_to_collapse << ", cost = " << lowest_cost.first << ", new v position (" << new_vetrex << ")" << std::endl;
+        //edge_flaps(F, E, EMAP, EF, EI);
+        //init_quad_costs();
+        //std::cout << "hellothere82\n" << std::endl;
     }
 
-    edge_flaps(F, E, EMAP, EF, EI);
+    //edge_flaps(F, E, EMAP, EF, EI);
+     //std::cout << "hellothere88\n" << std::endl;
 
-    init_quad_costs();
+
+    //init_quad_costs();
+    update_costs();
 }
 
 IGL_INLINE void igl::opengl::ViewerData::set_face_based(bool newvalue)
