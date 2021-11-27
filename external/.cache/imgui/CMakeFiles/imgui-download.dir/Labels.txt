@@ -1,14 +1,14 @@
 # Target labels
  imgui-download
 # Source files and their labels
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/imgui-download
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/482157e4b747ea61e26f65f552a8f936/imgui-download.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/c0410ac67cea0bab76781d7a0aee0ed9/imgui-download-complete.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-build.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-configure.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-download.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-install.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-mkdir.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-patch.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-test.rule
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/CMakeFiles/57f6d4cfb6e9486c6710f318a848f8d3/imgui-download-update.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/imgui-download
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/75f6ef0baa055f20349d0abf62d44428/imgui-download.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/4054b52cfd3bc1a5edfec74993445c67/imgui-download-complete.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-build.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-configure.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-download.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-install.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-mkdir.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-patch.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-test.rule
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/CMakeFiles/b4ee1e167c0de58ceeb461de7c30090f/imgui-download-update.rule

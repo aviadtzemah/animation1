@@ -1,6 +1,6 @@
-^D:\UNIVERSITYASSIMENTS\ANIMATION\CLEANASSIGNMENT1\ENGINEFORANIMATIONCOURSE\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\08597A98141086C3A2952F677C58A48E\GENERATE.STAMP.RULE
+^D:\UNIVERSITYASSIMENTS\ANIMATION\ASSIGNM\ANIMATION1\EXTERNAL\.CACHE\LIBIGL-IMGUI\CMAKEFILES\97CA49946E1EAF7682045B34680F3600\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/libigl-imgui -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/libigl-imgui --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/libigl-imgui/libigl-imgui-download.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/libigl-imgui -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/libigl-imgui --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/libigl-imgui/libigl-imgui-download.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

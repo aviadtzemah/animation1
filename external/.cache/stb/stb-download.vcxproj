@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CA03E8C0-F753-38D4-B789-B71D5640F209}</ProjectGuid>
+    <ProjectGuid>{D5C0D117-D887-382E-B5A8-7DFFB1FC6624}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -105,24 +105,24 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-mkdir.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-mkdir.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/stb
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/cmake/../external/stb
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/stb-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/build/stb-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -131,25 +131,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/stb
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/cmake/../external/stb
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/stb-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/build/stb-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -158,25 +158,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/stb
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/cmake/../external/stb
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/stb-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/build/stb-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -185,25 +185,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/cmake/../external/stb
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/cmake/../external/stb
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/build/stb-build
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/build/stb-build
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -212,21 +212,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-download.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -234,18 +234,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -253,18 +253,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,18 +272,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -291,20 +291,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\stb-download-gitinfo.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-update.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-update.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\stb
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external\stb
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -312,17 +312,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\stb
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external\stb
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -330,17 +330,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\stb
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external\stb
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -348,17 +348,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\stb
+cd D:\UniversityAssiments\Animation\Assignm\animation1\external\stb
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/tmp/stb-download-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -366,19 +366,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-patch.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-patch.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -386,15 +386,15 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -402,15 +402,15 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -418,15 +418,15 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -434,23 +434,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-configure.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-configure.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -458,18 +458,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -477,18 +477,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -496,18 +496,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -515,22 +515,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-build.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-build.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -538,18 +538,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -557,18 +557,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -576,18 +576,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -595,22 +595,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-install.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-install.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -618,18 +618,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -637,18 +637,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -656,18 +656,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -675,22 +675,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\05ea1eb54d171b6a1e5f75be836c5ac6\stb-download-test.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\4c9f86b7cc528c33eb2c3b3c0f09c184\stb-download-test.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -698,18 +698,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -717,18 +717,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -736,18 +736,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\build\stb-build
+cd D:\UniversityAssiments\Animation\Assignm\animation1\build\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 D:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -755,20 +755,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\78cef41c996a707f76a3c4b59ba7a5f4\stb-download-complete.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\564289b26104771cce2e44291d74e90b\stb-download-complete.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -776,17 +776,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -794,17 +794,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -812,17 +812,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'stb-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/$(Configuration)/stb-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/stb-download-prefix/src/stb-download-stamp/$(Configuration)/stb-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -830,14 +830,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-install;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-mkdir;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-download;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-update;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-patch;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-configure;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-build;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\src\stb-download-stamp\$(Configuration)\stb-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\2fb4db9054a2b253abc11e161de2b5f2\stb-download.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\fbf1729c2f0147154e419e343a706f37\stb-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 :cmEnd
@@ -846,8 +846,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\stb-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\stb-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
@@ -858,8 +858,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\stb-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\stb-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
@@ -870,8 +870,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\stb-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\stb-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
@@ -882,18 +882,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\stb-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\$(Configuration)\stb-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\stb-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeLists.txt">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -901,12 +901,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -914,12 +914,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -927,12 +927,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/stb/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb --check-stamp-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/stb/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -940,18 +940,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\RepositoryInfo.txt.in;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\3.22.0-rc1\CMakeSystem.cmake;D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\stb-download-prefix\tmp\stb-download-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\CMakeFiles\stb-download">
+    <None Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\CMakeFiles\stb-download">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\stb\ZERO_CHECK.vcxproj">
-      <Project>{8EC11F45-0BED-367F-927A-CDF929D6E9F8}</Project>
+    <ProjectReference Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\stb\ZERO_CHECK.vcxproj">
+      <Project>{9B5F077E-0A6F-34C3-83CA-CD91864E5F36}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

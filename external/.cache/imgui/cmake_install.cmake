@@ -1,4 +1,4 @@
-# Install script for directory: D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui
+# Install script for directory: D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

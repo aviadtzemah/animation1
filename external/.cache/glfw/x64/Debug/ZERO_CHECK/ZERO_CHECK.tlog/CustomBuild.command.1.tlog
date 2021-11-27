@@ -1,6 +1,6 @@
-^D:\UNIVERSITYASSIMENTS\ANIMATION\CLEANASSIGNMENT1\ENGINEFORANIMATIONCOURSE\EXTERNAL\.CACHE\GLFW\CMAKEFILES\942EF3A1AA0B5CCD4AE051967E479804\GENERATE.STAMP.RULE
+^D:\UNIVERSITYASSIMENTS\ANIMATION\ASSIGNM\ANIMATION1\EXTERNAL\.CACHE\GLFW\CMAKEFILES\3DAD2FD1AD50D009466FE14B87E17FC7\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glfw -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glfw --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glfw/glfw-download.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glfw -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glfw --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glfw/glfw-download.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

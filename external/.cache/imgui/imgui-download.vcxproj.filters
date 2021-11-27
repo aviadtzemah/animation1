@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-mkdir.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-download.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-update.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-patch.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-configure.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-build.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-install.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\57f6d4cfb6e9486c6710f318a848f8d3\imgui-download-test.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\b4ee1e167c0de58ceeb461de7c30090f\imgui-download-test.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\c0410ac67cea0bab76781d7a0aee0ed9\imgui-download-complete.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\4054b52cfd3bc1a5edfec74993445c67\imgui-download-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\482157e4b747ea61e26f65f552a8f936\imgui-download.rule">
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\75f6ef0baa055f20349d0abf62d44428\imgui-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeLists.txt" />
+    <CustomBuild Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\UniversityAssiments\Animation\CleanAssignment1\EngineForAnimationCourse\external\.cache\imgui\CMakeFiles\imgui-download" />
+    <None Include="D:\UniversityAssiments\Animation\Assignm\animation1\external\.cache\imgui\CMakeFiles\imgui-download" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{50C79A3D-69EA-3163-8B3D-53D57B78DF8E}</UniqueIdentifier>
+      <UniqueIdentifier>{3BE7F2BA-C20A-32F5-9912-272F3CFA2FB3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

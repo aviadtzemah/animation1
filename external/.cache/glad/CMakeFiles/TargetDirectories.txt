@@ -1,3 +1,3 @@
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glad/CMakeFiles/glad-download.dir
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glad/CMakeFiles/ALL_BUILD.dir
-D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/glad/CMakeFiles/ZERO_CHECK.dir
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glad/CMakeFiles/glad-download.dir
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glad/CMakeFiles/ALL_BUILD.dir
+D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/glad/CMakeFiles/ZERO_CHECK.dir

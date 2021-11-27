@@ -1,6 +1,6 @@
-^D:\UNIVERSITYASSIMENTS\ANIMATION\CLEANASSIGNMENT1\ENGINEFORANIMATIONCOURSE\EXTERNAL\.CACHE\IMGUI\CMAKEFILES\482157E4B747EA61E26F65F552A8F936\GENERATE.STAMP.RULE
+^D:\UNIVERSITYASSIMENTS\ANIMATION\ASSIGNM\ANIMATION1\EXTERNAL\.CACHE\IMGUI\CMAKEFILES\75F6EF0BAA055F20349D0ABF62D44428\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui -BD:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/CleanAssignment1/EngineForAnimationCourse/external/.cache/imgui/imgui-download.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui -BD:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/UniversityAssiments/Animation/Assignm/animation1/external/.cache/imgui/imgui-download.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
